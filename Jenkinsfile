@@ -22,7 +22,7 @@ pipeline {
             steps {
                 dir('/var/www/html/test1/') {
                     sh 'cd /var/www/html/test1/'
-                      sh 'gradle war --info'  
+                      sh 'gradle build'  
                     echo 'Deploying....'
                 }
             }
