@@ -20,8 +20,8 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                dir('/var/www/html/test/') {
-                    sh 'cd /var/www/html/test/'
+                dir('/var/www/html/test1/') {
+                    sh 'cd /var/www/html/test1/'
                     sh 'gradle war --info'  
                     echo 'Deploying....'
                 }
