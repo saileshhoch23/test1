@@ -22,7 +22,8 @@ pipeline {
             steps {
                 dir('/var/www/html/test1/') {
                     sh 'cd /var/www/html/test1/'
-                      sh 'gradle build'  
+                    sh 'gradle build' 
+                    sh 'cp /var/www/html/test1/build/libs/*.war /var/www/html/test/'
                     echo 'Deploying....'
                 }
             }
